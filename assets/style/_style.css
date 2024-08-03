@@ -81,8 +81,9 @@
 ._main_section{
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    padding: 2rem 5%;
+    padding: 5rem 5%;
 }
 .home{
     padding: 120px 5% 2rem 5%;
@@ -129,4 +130,10 @@
 
 [data-aos] {
 overflow-x: none !important;
+  }
+
+  .team-member-info{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 0.5rem solid var(--p);
   }
