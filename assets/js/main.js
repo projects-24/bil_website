@@ -41,7 +41,7 @@ team = [
         'name': 'Felix',
         'position': 'Logistics Manager',
         'profile': `/assets/images/team/male.png`
-    }
+    },
     {
         'name': 'Ida',
         'position': 'IT Manager',
