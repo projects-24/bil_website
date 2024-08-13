@@ -42,13 +42,6 @@ team = [
         'position': 'Logistics Manager',
         'profile': `/assets/images/team/male.png`
     }
-    ,
-    {
-        'name': 'Ivy',
-        'position': '',
-        'profile': `/assets/images/team/female.png`
-    }
-    ,
     {
         'name': 'Ida',
         'position': 'IT Manager',
