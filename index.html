@@ -353,24 +353,30 @@
             <div class="text-bold h6 uppercase text-p">Chief Executive Officer</div>
           </div>
           <div class="section2"></div>
-          <p class="article" data-aos="fade-up">
-             is a dedicated and highly qualified individual with a Bachelor's degree in Medical Laboratory Science from the University of Cape Coast. He has gained valuable experience and expertise in the field through his work at various healthcare institutions.
-            Currently, 
+          <p class="article">
+            <span class="active">Dr. Basingnaa</span> is a <span class="active">Transformational/Servant leader</span> with a flair for executing projects across a wide range of business and management disciplines. Leading the <span class="active">Bil Group</span> (<span class="active">Diagnostic services, Sanitation, Manufacturing, & food industry</span>), <span class="active">Tony</span> has made a positive impact among individuals and society. As a servant leader of the team, <span class="active">Tony</span> is responsible for setting and communicating the <span class="active">mission, vision, and goals</span> of each enterprise, including the long-term strategic direction of the group.
           </p>
           <div id="more_team" class="no_display">
+        
+            
             <p class="article">
-              <span class="active">Mr. Yussam</span> serves as a valuable team member at <span class="active">Wa Municipal Hospital</span> and the <span class="active">Lab Manager</span> of <span class="active">Bil Clinical Laboratories</span>, where he has been actively involved in providing quality healthcare services since <span class="active">2018</span>. Prior to this, he completed his national service at the prestigious <span class="active">Komfo Anokye Teaching Hospital</span>.
-              Throughout his career,
+              Offering a solid background in technical and business qualifications, including an <span class="active">MBA</span>, and with good communication and interpersonal skills, <span class="active">Tony</span> is an "<span class="active">ALL-ROUNDER</span>."
             </p>
+            
             <p class="article">
-              <span class="active">Mr. Yussam</span> has been an active member of several professional organizations, including the <span class="active">Medical Laboratory Professionals Workers Union</span> and the <span class="active">Ghana Association of Medical Laboratory Scientists</span>. He has also demonstrated a commitment to continuous learning and professional development by attending various conferences and workshops focused on research methodology, malaria diagnostics, and quality standards in medical laboratories.
-              In addition to his professional accomplishments,
+              A member of the <span class="active">Rotary club of WA</span>, philanthropic activities, including supporting the less privileged in society, are dear to <span class="active">Tony</span>. Constantly trying to acquire knowledge and skills, <span class="active">Tony</span> possesses in addition to a <span class="active">Diploma</span> and <span class="active">Bachelor’s degree</span>, three <span class="active">Masters degrees</span> - <span class="active">MSc-Microbiology</span> (UG, Legon), <span class="active">MPH-CUC/UG-Legon</span>, <span class="active">MBA-ABS/KNUST</span>, and a <span class="active">doctorate degree</span> in <span class="active">Medical Laboratory Science</span>-UDS-Tamale.
             </p>
+            
             <p class="article">
-              <span class="active">Mr. Yussam</span> has a keen interest in <span class="active">reading scientific articles and novels</span>, as well as <span class="active">playing football</span> in his spare time. His diverse skill set, strong work ethic, and passion for the healthcare industry make him a valuable asset to any organization.
+              <span class="active">Tony</span> has been recognized for his contribution to society (voted as one of the <span class="active">100 most influential people</span> in the northern sector by <span class="active">RUDDER COMMUNICATION & SAVANNA NEWS ONLINE</span> in <span class="active">2019</span>).
             </p>
+            
+            <p class="article">
+              <span class="active">Tony</span> is a <span class="active">family man</span> and enjoys <span class="active">reading</span> and <span class="active">gardening</span>.
+            </p>
+            
           </div>
-          <div class="padding">
+          <div class="section">
             <button id="ushan_more" class="button dark400">Read More</button>
           </div>
         </div>
@@ -523,6 +529,90 @@
     })
   </script>
 
-  <script src="./assets/js/main.js" />
+ <script  >
+
+
+let test, team 
+
+test = [
+    {
+        'main': 'HAEMATOLOGY',
+        'sub_tests': []
+    },
+    {
+        'main': 'HAEMATOLOGY',
+        'sub_tests': []
+    }
+]
+
+team = [
+    {
+        'name': 'Adamu Yussam',
+        'position': 'Lab Manager',
+        'profile': `/assets/images/team/male.png`
+    }
+    ,
+    {
+        'name': 'Nafisa Sidiki',
+        'position': 'Quality Assurance Quality',
+        'profile': `/assets/images/team/female.png`
+    }
+    ,
+    {
+        'name': 'Adamu Yussam',
+        'position': 'Lab Manager',
+        'profile': `/assets/images/team/male.png`
+    }
+    ,
+    {
+        'name': 'Afunya Kofi Daniel',
+        'position': 'Group Marketing Manager',
+        'profile': `/assets/images/team/male.png`
+    }
+    ,
+    {
+        'name': 'Felix',
+        'position': 'Logistics Manager',
+        'profile': `/assets/images/team/male.png`
+    }
+    ,
+    {
+        'name': 'Ivy',
+        'position': '',
+        'profile': `/assets/images/team/female.png`
+    }
+    ,
+    {
+        'name': 'Ida',
+        'position': 'IT Manager',
+        'profile': `/assets/images/team/female.png`
+    }
+    ,
+    {
+        'name': 'Salim Ahmed Adam',
+        'position': 'IT Consultant',
+        'profile': `/assets/images/team/female.png`
+    }
+]
+
+
+team.map(doc => {
+    let team_container = document.querySelector('#team');
+    let div = document.createElement('div');
+    div.className = "col sm-6 md-4 lg-4 padding margin-top-30";
+    div.innerHTML = `
+        <div>
+            <img src="${doc.profile}" alt="team member image" class='width-80'>
+        </div>
+        <div class="team-member-info">
+            <div class='h6 text-bold uppercase'>${doc.name}</div>
+            <div class='text-dark400'>${doc.position}</div>
+        </div>
+    `;
+    team_container.appendChild(div);
+})
+</script>
+
+
 </body>
 </html>
